@@ -11,6 +11,6 @@ public class Demo {
     public static void main(String[] args) {
         PhoneReader phoneReader = new FilePhoneReader();
         List<String> phones = phoneReader.readPhone(PATH_TO_FILE);
-        phones.stream().forEach(System.out::println);
+        phones.forEach(System.out::println);
     }
 }
